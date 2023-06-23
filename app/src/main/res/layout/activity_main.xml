@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    tools:context="id.my.notewhy.myscoreboard.MainActivity">
+    <LinearLayout
+        android:layout_width="310dp"
+        android:layout_height="70dp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="55dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/hlp"
+            android:background="@drawable/btn2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="HELP"
+            android:textColor="@color/black"
+            android:textSize="13dp" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/powerScoreboard"
+            android:background="@drawable/btn2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="POWER"
+            android:textSize="13dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/switchPosition"
+            android:background="@drawable/btn2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="SWITCH"
+            android:textColor="@color/black"
+            android:textSize="12dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="75dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/resetPoint"
+            android:background="@drawable/btn1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:textColor="@color/black"
+            android:text="RST"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:textSize="13dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="150dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addPointLeft"
+            android:background="@drawable/btn1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="+"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:layout_marginRight="90dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addPointRight"
+            android:background="@drawable/btn1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="+"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:layout_marginLeft="90dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_gravity="center">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/minusPointLeft"
+            android:background="@drawable/btn1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="-"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:layout_marginRight="90dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/minusPointRight"
+        android:background="@drawable/btn1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="-"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:layout_marginLeft="90dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="75dp"
+        android:layout_gravity="bottom|center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/addScoreLeft"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:text="+"
+                android:textSize="50dp"
+                android:textColor="@color/black"
+                android:background="@drawable/ic_top_left"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/addScoreRight"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:text="+"
+                android:textSize="50dp"
+                android:textColor="@color/black"
+                android:background="@drawable/ic_top_right" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/minusScoreLeft"
+                android:layout_width="120dp"
+                android:layout_height="122dp"
+                android:text="-"
+                android:textSize="50dp"
+                android:textColor="@color/black"
+                android:background="@drawable/ic_bott_left"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/minusScoreRight"
+                android:background="@drawable/ic_bott_right"
+                android:layout_width="120dp"
+                android:layout_height="122dp"
+                android:text="-"
+                android:textSize="50dp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton android:layout_height="110dp"
+        android:id="@+id/resetScore"
+        android:layout_width="110dp"
+        android:textColor="@color/black"
+        android:text="RST"
+        android:textSize="30dp"
+        android:background="@drawable/ic_cent"
+        android:layout_marginBottom="140dp"
+        android:layout_gravity="center_horizontal|bottom"/>
+</FrameLayout>

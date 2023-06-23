@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Cara Menggunakan Scoreboard"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="1. Pastikan scoreboard dalam keadaan menyala.\n\n2. Matikan data seluler di smartphone android.\n\n3. Nyalakan WiFi di smartphone android.\n\n4. Cari SSID MyScoreboard dan password 'admin123'.\n\n5. Jika sudah terhubung scoreboard siap digunakan.\n"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="Fungsi Bagian Aplikasi MyScoreboard"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="310dp"
+                android:layout_height="70dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="55dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/hlp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/btn2"
+                    android:text="HELP"
+                    android:textColor="@color/black"
+                    android:textSize="13dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/powerScoreboard"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:background="@drawable/btn2"
+                    android:text="POWER"
+                    android:textColor="@color/black"
+                    android:textSize="13dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/switchPosition"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/btn2"
+                    android:text="SWITCH"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Help befungsi sebagai tata cara menggunakan scoreboard.\nPower berfungsi untuk mengaktifkan atau menonaktifkan scoreboard.\nSwitch berfungsi untuk berganti posisi skor dan poin."
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="0dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/addPointLeft"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="90dp"
+                    android:background="@drawable/btn1"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/addPointRight"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/btn1"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/resetPoint"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/btn1"
+                    android:text="RST"
+                    android:textColor="@color/black"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_gravity="center">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/minusPointLeft"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="90dp"
+                    android:background="@drawable/btn1"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="40dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/minusPointRight"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/btn1"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="40dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Fungsi bagian ini digunakan untuk menambah dan mengurangi poin sesuai posisi, jika reset poin maka skor dan poin akan menjadi 0, sama halnya memulai permainan baru." />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/addScoreLeft"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/ic_top_left"
+                        android:text="+"
+                        android:textColor="@color/black"
+                        android:textSize="50dp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/addScoreRight"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/ic_top_right"
+                        android:text="+"
+                        android:textColor="@color/black"
+                        android:textSize="50dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/minusScoreLeft"
+                        android:layout_width="120dp"
+                        android:layout_height="122dp"
+                        android:background="@drawable/ic_bott_left"
+                        android:text="-"
+                        android:textColor="@color/black"
+                        android:textSize="50dp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/minusScoreRight"
+                        android:layout_width="120dp"
+                        android:layout_height="122dp"
+                        android:background="@drawable/ic_bott_right"
+                        android:text="-"
+                        android:textColor="@color/black"
+                        android:textSize="50dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="Fungsi ini digunakan untuk menambah skor sesuai posisi."/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/resetScore"
+                android:layout_marginTop="50dp"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ic_cent"
+                android:text="RST"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="Fungsi ini digunakan untuk reset skor, tidak mempengaruhi poin.\n"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
